@@ -1,0 +1,74 @@
+body {
+  background: black;
+}
+.images-container {
+  width: 100%;
+  padding-top: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-nav {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,.2);
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  border-radius: 50%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.image-nav:active {
+  background: rgba(255,255,255,.8);
+}
+
+.next-image {
+  right: 0;
+}
+
+.image-status {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 4;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-status > div {
+  width: 30px;
+  margin: 0 5px;
+  height: 30px;
+  background: rgba(255,255,255,.2);
+  border-radius: 50%;
+}
+
+.image-status > .active {
+  background: rgba(255,255,255,.9);
+}
+
+.images {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  transform: translateX(0);
+  transition: all .2s;
+}
+
+.images li {
+  width: 100%;
+}
+.images img {
+  max-width: 100%;
+  display: block;
+}

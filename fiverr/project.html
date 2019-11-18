@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK</title>
+	      <script src="js/js.js"></script>
+<style >
+.container {
+  position: relative;
+   top:-10px;
+  width: 360px;
+  height: 740px;
+  background-color: #33cc33;
+  font-family: Arial;
+  margin: 0 ;
+    padding: 0;
+    left: -10px;
+}
+
+#main{
+position: relative;
+top: -438px;
+width: 360px;
+left: -6px;
+color: black;
+font-size: 12px;
+/* background-color: white; */
+text-align: center;
+font-family: Arial;
+padding: 10px;
+}
+#v1{
+  height: 740px;
+  width:360px;
+  object-fit: cover;
+}
+
+#videoplay1{
+position: relative;
+
+}
+#videoplay2{
+ position: relative;
+}
+#videoplay3{
+  position: relative;
+  top: -50px;
+}
+.login{
+
+  position: relative;
+  top: 110px;
+  left: 50px;
+  color: #00ff00;
+
+
+}
+
+input[type=number]{
+    width: 150px;
+     font-family: Arial;
+}
+input[type=submit]{
+     background-color: white;
+     color: black;
+     border: 1px solid #555555;
+     font-family: Arial;
+     height: 21px;
+}
+input[type=submit]:hover{
+  background-color: #555555;
+  color: white;
+}
+.time-date {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999999999;
+}
+.time-date .date {
+
+}
+.time-date .time {
+
+}
+</style>
+</head>
+
+<body   onload='video1()'>
+	<div class="container">
+
+		<div id="videoplay1"   overflow: auto;  overflow-x: hidden; ></div>
+		<div id="videoplay2"   overflow: auto;  overflow-x: hidden; >
+
+    </div>
+		<div id="videoplay3"   overflow: auto;  overflow-x: hidden; ></div>
+    </div>
+    <div id="main">
+     <strong> Enter PIN <br></strong>
+       PIN contains at least 4 digits <br> <input type="number"  placeholder="xxxx" min="4"  name="pincode" id="pin" >
+       <input type="submit" name="OK" value="OK" onclick="check(pin)">
+     </div>
+</body>
+</html>
